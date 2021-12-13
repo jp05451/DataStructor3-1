@@ -205,12 +205,24 @@ public:
         }
     }
 
-    void rightRotation()
+    void RR_Rotation()
     {
+        
     }
 
-    void leftRotation()
+    void LL_Rotation()
     {
+
+    }
+
+    void RL_Rotation()
+    {
+
+    }
+
+    void LR_Rotation()
+    {
+        
     }
 };
 
