@@ -196,7 +196,7 @@ public:
                     nextNode[i]->destroyNode();
                 }
                 if (nextNode[i]->nextNode[0] == nullptr && nextNode[i]->nextNode[1] == nullptr)
-                //last Node of the tree
+                //last Node of the tre
                 {
                     delete nextNode[i];
                     nextNode[i] = nullptr;
