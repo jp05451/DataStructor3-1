@@ -207,22 +207,39 @@ public:
 
     void RR_Rotation()
     {
-        
     }
 
     void LL_Rotation()
     {
+        treeNode *topNode = nextNode[0];
+        treeNode *rotatnionNode = this;
+        treeNode *orphanNode = nextNode[0]->nextNode[1];
+        T dataCheck = data;
+        int childPos = 0;
+        if (parentNode->nextNode[0]->data == dataCheck)
+        {
+            childPos = 0;
+        }
+        else
+        {
+            childPos = 1;
+        }
+        parentNode->nextNode[childPos] = topNode;
+        topNode->parentNode = parentNode;
 
+        topNode->nextNode[1] = rotatnionNode;
+        rotatnionNode->parentNode = topNode;
+
+        rotatnionNode->nextNode[0] = orphanNode;
+        orphanNode->parentNode = rotatnionNode;
     }
 
     void RL_Rotation()
     {
-
     }
 
     void LR_Rotation()
     {
-        
     }
 };
 
